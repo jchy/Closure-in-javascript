@@ -19,3 +19,17 @@ function fun(){
 }
 fun();
 console.log(a);
+
+// Block scope also follows lexical scope
+const p = 20;
+{
+    {
+       
+        {
+            console.log(p);
+        }
+        console.log(p);
+    }
+    console.log(p)
+}
+console.log(p)
